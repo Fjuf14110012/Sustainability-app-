@@ -1473,7 +1473,7 @@ document.getElementById('quest-retry-btn').addEventListener('click', startQuest)
 // SHARE ECOTRACK
 // ══════════════════════════════════════════════════════════════════════════
 // ↓↓↓ CHANGE THIS to your live site URL once EcoTrack is hosted ↓↓↓
-const SHARE_URL = 'https://ecotrack.example.com';
+const SHARE_URL = 'https://fjuf14110012.github.io/Sustainability-app-/sustainability-app/';
 
 const shareBox = document.getElementById('share-box');
 const shareLinkInput = document.getElementById('share-link');
