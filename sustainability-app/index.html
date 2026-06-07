@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="doc.title">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrack — Live Sustainably</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <nav class="nav">
+      <div class="nav-brand">
+        <span class="leaf">🌿</span>
+        <span>EcoTrack</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#tools" data-i18n="nav.tools">Tools</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#footer" data-i18n="nav.takeaction">Take Action</a></li>
+      </ul>
+      <div class="lang-selector" id="lang-selector" role="group" aria-label="Language"></div>
+    </nav>
+    <div class="hero-content">
+      <h1><span data-i18n="hero.title1">Track Your Impact.</span><br/><span data-i18n="hero.title2">Shape a Greener Future.</span></h1>
+      <p data-i18n="hero.sub">Measure your carbon footprint, discover smart recycling tips, and test your sustainability knowledge — all in one place.</p>
+      <a href="#tools" class="btn-primary" data-i18n="hero.cta">Get Started</a>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f7f9f5"/></svg>
+    </div>
+  </header>
+
+  <!-- MAIN TOOLS SECTION -->
+  <main id="tools" class="main">
+    <div class="tabs-container">
+      <div class="primary-tabs" role="tablist">
+        <button class="ptab active" data-cat="home" role="tab" aria-selected="true">
+          <span class="tab-icon">🏡</span> <span data-i18n="tab.home">Home</span>
+        </button>
+        <button class="ptab" data-cat="tools" role="tab" aria-selected="false">
+          <span class="tab-icon">🛠️</span> <span data-i18n="tab.tools">Tools</span>
+        </button>
+        <button class="ptab" data-cat="learn" role="tab" aria-selected="false">
+          <span class="tab-icon">📚</span> <span data-i18n="tab.learn">Learn</span>
+        </button>
+        <button class="ptab" data-cat="games" role="tab" aria-selected="false">
+          <span class="tab-icon">🎮</span> <span data-i18n="tab.games">Games</span>
+        </button>
+        <button class="ptab" data-cat="world" role="tab" aria-selected="false">
+          <span class="tab-icon">🌍</span> <span data-i18n="tab.world">World</span>
+        </button>
+      </div>
+
+      <div class="panel-wrapper">
+        <div class="sub-tabs-bar" id="sub-tabs-bar">
+          <div class="sub-tabs" data-cat="tools">
+            <button class="stab" data-tab="calculator" data-i18n="subtab.calculator">🌡️ Carbon Calculator</button>
+            <button class="stab" data-tab="recycling"  data-i18n="subtab.recycling">♻️ Recycling Finder</button>
+            <button class="stab" data-tab="realtime"   data-i18n="subtab.realtime">🛰️ Real-time CO₂</button>
+            <button class="stab" data-tab="grid"       data-i18n="subtab.grid">🟢 Grid Cleanliness</button>
+            <button class="stab" data-tab="fridge"     data-i18n="subtab.fridge">🥕 Fridge Raid</button>
+            <button class="stab" data-tab="seasonal"   data-i18n="subtab.seasonal">🌾 Seasonal &amp; Local</button>
+            <button class="stab" data-tab="mealcompare" data-i18n="subtab.mealcompare">⚖️ Meal Footprint</button>
+            <button class="stab" data-tab="vampire"    data-i18n="subtab.vampire">🧛 Vampire Power</button>
+            <button class="stab" data-tab="laundry"    data-i18n="subtab.laundry">🧺 Eco-Laundry</button>
+            <button class="stab" data-tab="tracker"    data-i18n="subtab.tracker">📈 Footprint Tracker</button>
+          </div>
+          <div class="sub-tabs" data-cat="learn">
+            <button class="stab" data-tab="circular" data-i18n="subtab.circular">🔄 Circular Economy</button>
+            <button class="stab" data-tab="thrift"   data-i18n="subtab.thrift">👕 Thrift &amp; Save</button>
+            <button class="stab" data-tab="sdgs"     data-i18n="subtab.sdgs">🎯 SDG Actions</button>
+          </div>
+          <div class="sub-tabs" data-cat="games">
+            <button class="stab" data-tab="quest"  data-i18n="subtab.quest">🦸 Hero Quest</button>
+            <button class="stab" data-tab="quiz"   data-i18n="subtab.quiz">🧠 Eco Quiz</button>
+            <button class="stab" data-tab="sorter" data-i18n="subtab.sorter">🗑️ What Bin?</button>
+            <button class="stab" data-tab="energy" data-i18n="subtab.energy">⚡ Energy Grid</button>
+          </div>
+          <div class="sub-tabs" data-cat="world">
+            <button class="stab" data-tab="live"      data-i18n="subtab.live">📡 Live Counter</button>
+            <button class="stab" data-tab="sea"       data-i18n="subtab.sea">🌊 Sea Level</button>
+            <button class="stab" data-tab="refugees"  data-i18n="subtab.refugees">💬 Stories</button>
+            <button class="stab" data-tab="activism"  data-i18n="subtab.activism">📍 Activism</button>
+            <button class="stab" data-tab="corporate" data-i18n="subtab.corporate">🏢 Corporate</button>
+            <button class="stab" data-tab="policy"    data-i18n="subtab.policy">⚖️ Laws &amp; Policies</button>
+            <button class="stab" data-tab="join"      data-i18n="subtab.join">🤝 Join Associations</button>
+          </div>
+        </div>
+
+      <!-- HOME -->
+      <div class="tab-panel active" id="panel-home">
+        <div class="panel-header">
+          <h2 data-i18n="home.welcome">Welcome to EcoTrack</h2>
+          <p data-i18n="home.welcomeSub">Your starting point for understanding sustainability and taking action.</p>
+        </div>
+
+        <div class="home-definition">
+          <span class="def-icon">🌍</span>
+          <div>
+            <h3 data-i18n="home.whatTitle">What is Sustainability?</h3>
+            <p data-i18n="home.whatBody">Sustainability means meeting the needs of the present without compromising the ability of future generations to meet their own needs. It is about living in balance with our planet — using natural resources responsibly so the Earth can keep supporting life for centuries to come.</p>
+          </div>
+        </div>
+
+        <h3 class="home-section-title" data-i18n="home.pillarsTitle">The Three Pillars of Sustainability</h3>
+        <p class="home-section-sub" data-i18n="home.pillarsSub">True sustainability stands where all three pillars meet.</p>
+        <div class="pillars-grid">
+          <div class="pillar-card pillar-env">
+            <span class="pillar-icon">🌱</span>
+            <h4 data-i18n="home.envTitle">Environmental</h4>
+            <p data-i18n="home.envDesc">Protecting ecosystems, conserving resources, reducing pollution, and limiting climate change so nature can thrive.</p>
+          </div>
+          <div class="pillar-card pillar-social">
+            <span class="pillar-icon">🤝</span>
+            <h4 data-i18n="home.socialTitle">Social</h4>
+            <p data-i18n="home.socialDesc">Ensuring fairness, health, education, and a good quality of life for all people — today and in the future.</p>
+          </div>
+          <div class="pillar-card pillar-econ">
+            <span class="pillar-icon">💼</span>
+            <h4 data-i18n="home.econTitle">Economic</h4>
+            <p data-i18n="home.econDesc">Building economies that create long-term value without exhausting the resources future generations will rely on.</p>
+          </div>
+        </div>
+
+        <h3 class="home-section-title" data-i18n="home.whyTitle">Why Does It Matter?</h3>
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-icon">🌡️</span>
+            <div>
+              <h4 data-i18n="home.why.climate">Climate Stability</h4>
+              <p data-i18n="home.why.climateD">Cutting emissions keeps global warming in check and prevents extreme weather, droughts, and rising seas.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">🐝</span>
+            <div>
+              <h4 data-i18n="home.why.bio">Protecting Biodiversity</h4>
+              <p data-i18n="home.why.bioD">Healthy ecosystems and species diversity keep our food, water, and air systems working.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">⛽</span>
+            <div>
+              <h4 data-i18n="home.why.res">Resource Security</h4>
+              <p data-i18n="home.why.resD">Many resources are finite. Using them wisely ensures they last for generations to come.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">❤️</span>
+            <div>
+              <h4 data-i18n="home.why.health">Human Health & Equity</h4>
+              <p data-i18n="home.why.healthD">Clean air, safe water, and fair access to resources improve lives and reduce inequality worldwide.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="home-section-title" data-i18n="home.sdgTitle">The 17 UN Sustainable Development Goals</h3>
+        <p class="home-section-sub" data-i18n="home.sdgSub">Adopted by all UN member states in 2015, the SDGs are a shared blueprint for peace and prosperity for people and the planet by 2030.</p>
+        <div class="sdg-grid">
+          <button type="button" class="sdg-card" data-sdg="1"  style="--sdg:#E5243B"><span class="sdg-num">1</span><span class="sdg-icon">🚫</span><span class="sdg-name" data-i18n="sdg.1">No Poverty</span></button>
+          <button type="button" class="sdg-card" data-sdg="2"  style="--sdg:#DDA63A"><span class="sdg-num">2</span><span class="sdg-icon">🌾</span><span class="sdg-name" data-i18n="sdg.2">Zero Hunger</span></button>
+          <button type="button" class="sdg-card" data-sdg="3"  style="--sdg:#4C9F38"><span class="sdg-num">3</span><span class="sdg-icon">❤️‍🩹</span><span class="sdg-name" data-i18n="sdg.3">Good Health & Well-being</span></button>
+          <button type="button" class="sdg-card" data-sdg="4"  style="--sdg:#C5192D"><span class="sdg-num">4</span><span class="sdg-icon">📚</span><span class="sdg-name" data-i18n="sdg.4">Quality Education</span></button>
+          <button type="button" class="sdg-card" data-sdg="5"  style="--sdg:#FF3A21"><span class="sdg-num">5</span><span class="sdg-icon">⚧️</span><span class="sdg-name" data-i18n="sdg.5">Gender Equality</span></button>
+          <button type="button" class="sdg-card" data-sdg="6"  style="--sdg:#26BDE2"><span class="sdg-num">6</span><span class="sdg-icon">💧</span><span class="sdg-name" data-i18n="sdg.6">Clean Water & Sanitation</span></button>
+          <button type="button" class="sdg-card" data-sdg="7"  style="--sdg:#FCC30B"><span class="sdg-num">7</span><span class="sdg-icon">⚡</span><span class="sdg-name" data-i18n="sdg.7">Affordable & Clean Energy</span></button>
+          <button type="button" class="sdg-card" data-sdg="8"  style="--sdg:#A21942"><span class="sdg-num">8</span><span class="sdg-icon">💼</span><span class="sdg-name" data-i18n="sdg.8">Decent Work & Economic Growth</span></button>
+          <button type="button" class="sdg-card" data-sdg="9"  style="--sdg:#FD6925"><span class="sdg-num">9</span><span class="sdg-icon">🏗️</span><span class="sdg-name" data-i18n="sdg.9">Industry, Innovation & Infrastructure</span></button>
+          <button type="button" class="sdg-card" data-sdg="10" style="--sdg:#DD1367"><span class="sdg-num">10</span><span class="sdg-icon">⚖️</span><span class="sdg-name" data-i18n="sdg.10">Reduced Inequalities</span></button>
+          <button type="button" class="sdg-card" data-sdg="11" style="--sdg:#FD9D24"><span class="sdg-num">11</span><span class="sdg-icon">🏙️</span><span class="sdg-name" data-i18n="sdg.11">Sustainable Cities & Communities</span></button>
+          <button type="button" class="sdg-card" data-sdg="12" style="--sdg:#BF8B2E"><span class="sdg-num">12</span><span class="sdg-icon">♻️</span><span class="sdg-name" data-i18n="sdg.12">Responsible Consumption & Production</span></button>
+          <button type="button" class="sdg-card" data-sdg="13" style="--sdg:#3F7E44"><span class="sdg-num">13</span><span class="sdg-icon">🌡️</span><span class="sdg-name" data-i18n="sdg.13">Climate Action</span></button>
+          <button type="button" class="sdg-card" data-sdg="14" style="--sdg:#0A97D9"><span class="sdg-num">14</span><span class="sdg-icon">🐠</span><span class="sdg-name" data-i18n="sdg.14">Life Below Water</span></button>
+          <button type="button" class="sdg-card" data-sdg="15" style="--sdg:#56C02B"><span class="sdg-num">15</span><span class="sdg-icon">🌳</span><span class="sdg-name" data-i18n="sdg.15">Life on Land</span></button>
+          <button type="button" class="sdg-card" data-sdg="16" style="--sdg:#00689D"><span class="sdg-num">16</span><span class="sdg-icon">☮️</span><span class="sdg-name" data-i18n="sdg.16">Peace, Justice & Strong Institutions</span></button>
+          <button type="button" class="sdg-card" data-sdg="17" style="--sdg:#19486A"><span class="sdg-num">17</span><span class="sdg-icon">🤝</span><span class="sdg-name" data-i18n="sdg.17">Partnerships for the Goals</span></button>
+        </div>
+
+        <h3 class="home-section-title" data-i18n="home.startTitle">Simple Ways to Start Today</h3>
+        <ul class="action-list">
+          <li data-i18n="home.act.1">♻️ Recycle correctly and cut down on single-use plastics.</li>
+          <li data-i18n="home.act.2">🥗 Eat more plant-based meals and reduce food waste.</li>
+          <li data-i18n="home.act.3">🚲 Walk, cycle, or use public transport when you can.</li>
+          <li data-i18n="home.act.4">💡 Save energy at home — switch off, unplug, and use LED bulbs.</li>
+          <li data-i18n="home.act.5">🛍️ Buy less, choose secondhand, and repair instead of replace.</li>
+          <li data-i18n="home.act.6">💧 Conserve water with shorter showers and mindful use.</li>
+        </ul>
+
+        <div class="home-cta">
+          <h3 data-i18n="home.cta.title">Pick your path 👇</h3>
+          <p data-i18n="home.cta.sub">Measure your impact, deepen your knowledge, or test your eco-instincts in a game.</p>
+          <div class="home-cta-buttons">
+            <button class="btn-primary" data-goto="calculator" data-i18n="home.cta.measure">🛠️ Measure My Impact</button>
+            <button class="btn-outline" data-goto="circular"   data-i18n="home.cta.learn">📚 Start Learning</button>
+            <button class="btn-outline" data-goto="quest"      data-i18n="home.cta.game">🎮 Play a Game</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARBON CALCULATOR -->
+      <div class="tab-panel" id="panel-calculator">
+        <div class="panel-header">
+          <h2 data-i18n="calc.title">Carbon Footprint Calculator</h2>
+          <p data-i18n="calc.sub">Estimate your annual CO₂ emissions based on your lifestyle choices.</p>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-section">
+            <h3 data-i18n="calc.transport">🚗 Transportation</h3>
+            <label><span data-i18n="calc.miles">Miles driven per week</span>
+              <input type="number" id="miles" placeholder="0" min="0" />
+            </label>
+            <label><span data-i18n="calc.fShort">Flights per year (short-haul)</span>
+              <input type="number" id="flights-short" placeholder="0" min="0" />
+            </label>
+            <label><span data-i18n="calc.fLong">Flights per year (long-haul)</span>
+              <input type="number" id="flights-long" placeholder="0" min="0" />
+            </label>
+          </div>
+          <div class="calc-section">
+            <h3 data-i18n="calc.home">🏠 Home Energy</h3>
+            <label><span data-i18n="calc.elec">Monthly electricity bill ($)</span>
+              <input type="number" id="electricity" placeholder="0" min="0" />
+            </label>
+            <label><span data-i18n="calc.gas">Monthly gas bill ($)</span>
+              <input type="number" id="gas" placeholder="0" min="0" />
+            </label>
+            <label><span data-i18n="calc.homeType">Home type</span>
+              <select id="home-type">
+                <option value="apartment"   data-i18n="calc.opt.apartment">Apartment</option>
+                <option value="small-house" data-i18n="calc.opt.smallH">Small House</option>
+                <option value="large-house" data-i18n="calc.opt.largeH">Large House</option>
+              </select>
+            </label>
+          </div>
+          <div class="calc-section">
+            <h3 data-i18n="calc.diet">🥗 Diet</h3>
+            <label><span data-i18n="calc.dietType">Diet type</span>
+              <select id="diet">
+                <option value="vegan"       data-i18n="calc.opt.vegan">Vegan</option>
+                <option value="vegetarian"  data-i18n="calc.opt.veg">Vegetarian</option>
+                <option value="pescatarian" data-i18n="calc.opt.pesc">Pescatarian</option>
+                <option value="omnivore"    data-i18n="calc.opt.omni">Omnivore</option>
+                <option value="heavy-meat"  data-i18n="calc.opt.meat">Heavy Meat Eater</option>
+              </select>
+            </label>
+            <label><span data-i18n="calc.waste">Food waste level</span>
+              <select id="food-waste">
+                <option value="low"    data-i18n="calc.opt.low">Low — I rarely waste food</option>
+                <option value="medium" data-i18n="calc.opt.med">Medium — Some waste</option>
+                <option value="high"   data-i18n="calc.opt.high">High — Frequent waste</option>
+              </select>
+            </label>
+          </div>
+          <div class="calc-section">
+            <h3 data-i18n="calc.shop">🛍️ Shopping</h3>
+            <label><span data-i18n="calc.clothes">Monthly spending on new clothes ($)</span>
+              <input type="number" id="clothes" placeholder="0" min="0" />
+            </label>
+            <label><span data-i18n="calc.shopping">Monthly online shopping orders</span>
+              <input type="number" id="shopping" placeholder="0" min="0" />
+            </label>
+          </div>
+        </div>
+        <div class="calc-actions">
+          <button class="btn-primary" id="calc-btn"   data-i18n="calc.go">Calculate My Footprint</button>
+          <button class="btn-outline" id="calc-reset" data-i18n="calc.reset">Reset</button>
+        </div>
+        <div class="result-card hidden" id="calc-result">
+          <div class="result-top">
+            <div class="result-value">
+              <span id="result-number">0</span>
+              <span class="result-unit" data-i18n="calc.unit">tonnes CO₂/year</span>
+            </div>
+            <div class="result-gauge">
+              <div class="gauge-bar">
+                <div class="gauge-fill" id="gauge-fill"></div>
+              </div>
+              <div class="gauge-labels">
+                <span>0</span><span data-i18n="calc.avg">Global Avg 4t</span><span>10+</span>
+              </div>
+            </div>
+          </div>
+          <div class="result-rating" id="result-rating"></div>
+          <div class="result-breakdown" id="result-breakdown"></div>
+          <div class="result-tips" id="result-tips"></div>
+        </div>
+      </div>
+
+      <!-- RECYCLING FINDER -->
+      <div class="tab-panel" id="panel-recycling">
+        <div class="panel-header">
+          <h2 data-i18n="rec.title">Recycling Search Tool</h2>
+          <p data-i18n="rec.sub">Find out how to properly dispose of any item — reduce waste the right way.</p>
+        </div>
+        <div class="search-box">
+          <div class="search-input-wrap">
+            <input type="text" id="recycle-search" data-i18n-placeholder="rec.placeholder" placeholder="Search an item (e.g. pizza box, battery, phone...)" />
+            <button class="btn-primary" id="search-btn" data-i18n="rec.search">Search</button>
+          </div>
+          <div class="quick-tags">
+            <span data-i18n="rec.quick">Quick search:</span>
+            <button class="tag" data-item="plastic bottle">Plastic Bottle</button>
+            <button class="tag" data-item="battery">Battery</button>
+            <button class="tag" data-item="pizza box">Pizza Box</button>
+            <button class="tag" data-item="phone">Old Phone</button>
+            <button class="tag" data-item="glass jar">Glass Jar</button>
+            <button class="tag" data-item="newspaper">Newspaper</button>
+            <button class="tag" data-item="styrofoam">Styrofoam</button>
+            <button class="tag" data-item="clothes">Old Clothes</button>
+          </div>
+        </div>
+        <div class="recycle-result hidden" id="recycle-result"></div>
+        <div class="recycle-categories">
+          <h3 data-i18n="rec.browse">Browse by Category</h3>
+          <div class="category-grid">
+            <button class="category-card" data-category="paper">
+              <span>📄</span><span>Paper & Cardboard</span>
+            </button>
+            <button class="category-card" data-category="plastic">
+              <span>🧴</span><span>Plastics</span>
+            </button>
+            <button class="category-card" data-category="glass">
+              <span>🫙</span><span>Glass</span>
+            </button>
+            <button class="category-card" data-category="metal">
+              <span>🥫</span><span>Metal & Cans</span>
+            </button>
+            <button class="category-card" data-category="electronics">
+              <span>💻</span><span>Electronics</span>
+            </button>
+            <button class="category-card" data-category="organic">
+              <span>🍃</span><span>Organic Waste</span>
+            </button>
+          </div>
+        </div>
+        <div class="category-result hidden" id="category-result"></div>
+      </div>
+
+      <!-- REAL-TIME CO₂ ESTIMATOR (Carbon Interface API) -->
+      <div class="tab-panel" id="panel-realtime">
+        <div class="panel-header">
+          <h2 data-i18n="rt.title">🛰️ Real-time CO₂ Estimator</h2>
+          <p data-i18n="rt.sub">Estimate the live CO₂ impact of a flight, electricity use or a shipment. Optionally connects to the Carbon Interface API for precise values; otherwise uses public emission factors (DEFRA / IEA).</p>
+        </div>
+
+        <details class="rt-key-card" id="rt-key-card">
+          <summary>
+            <span class="rt-key-summary-text" data-i18n="rt.key.summary">🔑 Optional: Carbon Interface API key</span>
+            <span class="rt-key-status" id="rt-key-status" data-i18n="rt.key.statusOff">— offline factors</span>
+          </summary>
+          <p class="rt-key-help" data-i18n="rt.key.help">Carbon Interface offers a free tier. Paste your API key below to get live API-backed estimates. The key is stored only in your browser (localStorage) — never sent anywhere except to Carbon Interface.</p>
+          <p class="rt-key-link"><a href="https://www.carboninterface.com/account/api" target="_blank" rel="noopener noreferrer" data-i18n="rt.key.getOne">→ Get a free Carbon Interface API key</a></p>
+          <div class="rt-key-row">
+            <input type="password" id="rt-key-input" autocomplete="off" spellcheck="false" data-i18n-placeholder="rt.key.placeholder" placeholder="Paste your Carbon Interface API key…" />
+            <button type="button" class="btn-primary" id="rt-key-save" data-i18n="rt.key.save">Save key</button>
+            <button type="button" class="btn-secondary" id="rt-key-clear" data-i18n="rt.key.clear">Clear</button>
+          </div>
+          <div class="rt-key-msg" id="rt-key-msg" hidden></div>
+        </details>
+
+        <div class="rt-mode-tabs" role="tablist">
+          <button type="button" class="rt-mode-btn is-active" data-rt-mode="flight"      data-i18n="rt.mode.flight">✈️ Flight</button>
+          <button type="button" class="rt-mode-btn"           data-rt-mode="electricity" data-i18n="rt.mode.electricity">⚡ Electricity</button>
+          <button type="button" class="rt-mode-btn"           data-rt-mode="shipping"    data-i18n="rt.mode.shipping">📦 Shipping</button>
+        </div>
+
+        <!-- FLIGHT FORM -->
+        <form class="rt-form" id="rt-form-flight" data-rt-form="flight">
+          <div class="rt-field">
+            <label for="rt-flight-distance" data-i18n="rt.flight.distance">Distance (km)</label>
+            <input type="number" id="rt-flight-distance" min="0" step="1" value="800" />
+            <small data-i18n="rt.flight.distanceHelp">One-way distance per leg. Paris → London ≈ 350 km, NYC → London ≈ 5570 km.</small>
+          </div>
+          <div class="rt-field">
+            <label for="rt-flight-passengers" data-i18n="rt.flight.passengers">Passengers</label>
+            <input type="number" id="rt-flight-passengers" min="1" step="1" value="1" />
+          </div>
+          <div class="rt-field">
+            <label for="rt-flight-class" data-i18n="rt.flight.class">Cabin class</label>
+            <select id="rt-flight-class">
+              <option value="economy"  data-i18n="rt.flight.classEconomy">Economy</option>
+              <option value="premium"  data-i18n="rt.flight.classPremium">Premium economy (×1.5)</option>
+              <option value="business" data-i18n="rt.flight.classBusiness">Business (×2.9)</option>
+              <option value="first"    data-i18n="rt.flight.classFirst">First (×4.0)</option>
+            </select>
+          </div>
+        </form>
+
+        <!-- ELECTRICITY FORM -->
+        <form class="rt-form hidden" id="rt-form-electricity" data-rt-form="electricity">
+          <div class="rt-field">
+            <label for="rt-elec-kwh" data-i18n="rt.elec.kwh">Electricity used (kWh)</label>
+            <input type="number" id="rt-elec-kwh" min="0" step="1" value="100" />
+          </div>
+          <div class="rt-field">
+            <label for="rt-elec-country" data-i18n="rt.elec.country">Country (ISO-2 code)</label>
+            <input type="text" id="rt-elec-country" maxlength="2" value="us" />
+            <small data-i18n="rt.elec.countryHelp">e.g. us, fr, de, cn, tw, gb. Used by the API; offline mode uses a world average.</small>
+          </div>
+        </form>
+
+        <!-- SHIPPING FORM -->
+        <form class="rt-form hidden" id="rt-form-shipping" data-rt-form="shipping">
+          <div class="rt-field">
+            <label for="rt-ship-weight" data-i18n="rt.ship.weight">Package weight (kg)</label>
+            <input type="number" id="rt-ship-weight" min="0" step="0.1" value="2" />
+          </div>
+          <div class="rt-field">
+            <label for="rt-ship-distance" data-i18n="rt.ship.distance">Distance (km)</label>
+            <input type="number" id="rt-ship-distance" min="0" step="1" value="1500" />
+          </div>
+          <div class="rt-field">
+            <label for="rt-ship-method" data-i18n="rt.ship.method">Transport method</label>
+            <select id="rt-ship-method">
+              <option value="truck" data-i18n="rt.ship.methodTruck">🚚 Truck</option>
+              <option value="train" data-i18n="rt.ship.methodTrain">🚆 Train</option>
+              <option value="ship"  data-i18n="rt.ship.methodShip">🚢 Ship</option>
+              <option value="plane" data-i18n="rt.ship.methodPlane">✈️ Plane (air freight)</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="rt-actions">
+          <button type="button" class="btn-primary" id="rt-estimate-btn" data-i18n="rt.estimate">📊 Estimate CO₂</button>
+        </div>
+
+        <div class="rt-result" id="rt-result">
+          <div class="rt-result-prompt" data-i18n="rt.prompt">⬆️ Fill in the fields and tap “Estimate CO₂”.</div>
+        </div>
+
+        <p class="rt-disclaimer" data-i18n="rt.disclaimer">💡 Offline estimates use DEFRA 2024 (transport) and IEA 2022 (electricity) global averages — useful for ballpark figures, not a substitute for an audited carbon footprint.</p>
+      </div>
+
+      <!-- LIVE GRID-CLEANLINESS WIDGET (Electricity Maps API) -->
+      <div class="tab-panel" id="panel-grid">
+        <div class="panel-header">
+          <h2 data-i18n="grid.title">🟢 Live Grid Cleanliness</h2>
+          <p data-i18n="grid.sub">See how clean your local electricity grid is right now — and pick the best moment to charge devices or run heavy data tasks. Connects to the free Electricity Maps API when you provide a key, otherwise uses published yearly averages.</p>
+        </div>
+
+        <details class="rt-key-card" id="grid-key-card">
+          <summary>
+            <span class="rt-key-summary-text" data-i18n="grid.key.summary">🔑 Optional: Electricity Maps API key</span>
+            <span class="rt-key-status" id="grid-key-status" data-i18n="grid.key.statusOff">— yearly averages</span>
+          </summary>
+          <p class="rt-key-help" data-i18n="grid.key.help">Electricity Maps offers a free personal API tier. Paste your auth-token below to fetch live carbon-intensity data. The token is stored only in your browser (localStorage).</p>
+          <p class="rt-key-link"><a href="https://api-portal.electricitymaps.com/" target="_blank" rel="noopener noreferrer" data-i18n="grid.key.getOne">→ Get a free Electricity Maps API key</a></p>
+          <div class="rt-key-row">
+            <input type="password" id="grid-key-input" autocomplete="off" spellcheck="false" data-i18n-placeholder="grid.key.placeholder" placeholder="Paste your Electricity Maps auth-token…" />
+            <button type="button" class="btn-primary" id="grid-key-save" data-i18n="grid.key.save">Save key</button>
+            <button type="button" class="btn-secondary" id="grid-key-clear" data-i18n="grid.key.clear">Clear</button>
+          </div>
+          <div class="rt-key-msg" id="grid-key-msg" hidden></div>
+        </details>
+
+        <div class="grid-controls">
+          <div class="rt-field grid-zone-field">
+            <label for="grid-zone" data-i18n="grid.zoneLabel">Pick your grid zone</label>
+            <select id="grid-zone"></select>
+          </div>
+          <button type="button" class="btn-primary" id="grid-refresh-btn" data-i18n="grid.refresh">↻ Check now</button>
+        </div>
+
+        <div class="grid-status" id="grid-status">
+          <div class="grid-status-prompt" data-i18n="grid.prompt">⬆️ Pick your country / region and tap “Check now” to see how clean the grid is right now.</div>
+        </div>
+
+        <p class="rt-disclaimer" data-i18n="grid.disclaimer">💡 Thresholds: 🟢 &lt; 200 g CO₂/kWh (clean), 🟡 200–450 g (medium), 🔴 &gt; 450 g (carbon-heavy). Offline yearly averages come from Ember and IEA 2023 reports.</p>
+      </div>
+
+      <!-- FRIDGE RAID — Food Waste Minimizer -->
+      <div class="tab-panel" id="panel-fridge">
+        <div class="panel-header">
+          <h2 data-i18n="fridge.title">🥕 Fridge Raid — Food Waste Minimizer</h2>
+          <p data-i18n="fridge.sub">Got ingredients about to go off? List what is in your fridge and we will match them to recipes that use as many of them as possible — straight from a local recipe library, no account or internet needed.</p>
+        </div>
+
+        <div class="fridge-input-card">
+          <label for="fridge-input" class="fridge-label" data-i18n="fridge.inputLabel">🧊 What is in your fridge?</label>
+          <textarea id="fridge-input" rows="3" data-i18n-placeholder="fridge.placeholder" placeholder="e.g. eggs, tomato, spinach, onion, leftover rice…"></textarea>
+          <small class="fridge-hint" data-i18n="fridge.hint">Separate ingredients with commas or new lines. Common spellings work (tomato/tomatoes, courgette/zucchini, capsicum/pepper).</small>
+
+          <div class="fridge-chip-row" id="fridge-chip-row" aria-hidden="true"></div>
+
+          <div class="fridge-quick">
+            <span class="fridge-quick-label" data-i18n="fridge.quickLabel">Quick add:</span>
+            <button type="button" class="fridge-quick-btn" data-fridge-add="egg, milk, butter, cheese">🍳 <span data-i18n="fridge.quickBreakfast">Breakfast staples</span></button>
+            <button type="button" class="fridge-quick-btn" data-fridge-add="tomato, onion, garlic, olive oil, basil">🍝 <span data-i18n="fridge.quickPasta">Pasta night</span></button>
+            <button type="button" class="fridge-quick-btn" data-fridge-add="rice, soy sauce, ginger, garlic, carrot, egg">🥢 <span data-i18n="fridge.quickStirfry">Stir-fry</span></button>
+            <button type="button" class="fridge-quick-btn" data-fridge-add="potato, carrot, onion, lentils, stock">🥣 <span data-i18n="fridge.quickSoup">Soup base</span></button>
+          </div>
+
+          <div class="fridge-actions">
+            <button type="button" class="btn-primary" id="fridge-find-btn" data-i18n="fridge.find">🔎 Find recipes</button>
+            <button type="button" class="btn-secondary" id="fridge-clear-btn" data-i18n="fridge.clear">🧹 Clear</button>
+          </div>
+        </div>
+
+        <div class="fridge-results" id="fridge-results">
+          <div class="fridge-results-prompt" data-i18n="fridge.prompt">⬆️ Drop in a few ingredients and tap “Find recipes”. The more you list, the better the matches.</div>
+        </div>
+
+        <p class="rt-disclaimer" data-i18n="fridge.disclaimer">💡 ~1/3 of food produced worldwide is wasted (FAO). Cooking what you already have is one of the highest-impact things you can do — it saves emissions, water, land, and money in one go.</p>
+      </div>
+
+      <!-- SEASONAL & LOCAL FOOD FINDER -->
+      <div class="tab-panel" id="panel-seasonal">
+        <div class="panel-header">
+          <h2 data-i18n="seasonal.title">🌾 Seasonal &amp; Local Food Finder</h2>
+          <p data-i18n="seasonal.sub">Pick produce that is actually growing near you right now — fewer flight-miles, fresher taste, lower price. We detect your region from your time zone but you can change it any time.</p>
+        </div>
+
+        <div class="seasonal-controls">
+          <div class="seasonal-field">
+            <label for="seasonal-region" data-i18n="seasonal.regionLabel">Your region</label>
+            <select id="seasonal-region"></select>
+          </div>
+          <div class="seasonal-field">
+            <label for="seasonal-month" data-i18n="seasonal.monthLabel">Month</label>
+            <select id="seasonal-month"></select>
+          </div>
+          <button type="button" class="btn-secondary seasonal-reset-btn" id="seasonal-reset-btn" data-i18n="seasonal.reset">↻ Use my current month</button>
+        </div>
+
+        <div class="seasonal-summary" id="seasonal-summary"></div>
+
+        <div class="seasonal-section">
+          <h3 class="seasonal-section-title" data-i18n="seasonal.inSeasonTitle">✅ In season right now</h3>
+          <p class="seasonal-section-sub" data-i18n="seasonal.inSeasonSub">Tick items as you buy them — these are at peak flavour and the lowest carbon cost.</p>
+          <div class="seasonal-grid" id="seasonal-in-season"></div>
+        </div>
+
+        <div class="seasonal-section">
+          <h3 class="seasonal-section-title" data-i18n="seasonal.comingTitle">🌱 Coming next month</h3>
+          <p class="seasonal-section-sub" data-i18n="seasonal.comingSub">A sneak peek so you can plan ahead.</p>
+          <div class="seasonal-grid seasonal-grid-secondary" id="seasonal-coming"></div>
+        </div>
+
+        <div class="seasonal-section">
+          <h3 class="seasonal-section-title" data-i18n="seasonal.importedTitle">✈️ Probably flown in this month</h3>
+          <p class="seasonal-section-sub" data-i18n="seasonal.importedSub">Not local right now. Tasty alternatives are listed above — saving these for their natural season cuts food-miles dramatically.</p>
+          <div class="seasonal-grid seasonal-grid-imported" id="seasonal-imported"></div>
+        </div>
+
+        <p class="rt-disclaimer" data-i18n="seasonal.disclaimer">💡 Air-freighted produce can emit up to 50× more CO₂ than the same item grown locally and in season (Our World in Data). Eating seasonally is one of the simplest weekly habits that actually moves the needle.</p>
+      </div>
+
+      <!-- MEAL FOOTPRINT COMPARISON TOOL -->
+      <div class="tab-panel" id="panel-mealcompare">
+        <div class="panel-header">
+          <h2 data-i18n="mc.title">⚖️ Meal Footprint Comparison</h2>
+          <p data-i18n="mc.sub">Build two plates and see their carbon &amp; water footprints side-by-side. Swap one ingredient and watch the difference — choices on the plate are some of the most powerful climate levers an individual has.</p>
+        </div>
+
+        <div class="mc-presets">
+          <span class="mc-presets-label" data-i18n="mc.presetsLabel">Try a preset:</span>
+          <button type="button" class="mc-preset-btn" data-mc-preset="burger">🍔 <span data-i18n="mc.preset.burger">Beef vs Lentil Burger</span></button>
+          <button type="button" class="mc-preset-btn" data-mc-preset="steakbowl">🥩 <span data-i18n="mc.preset.steakbowl">Steak Dinner vs Vegan Bowl</span></button>
+          <button type="button" class="mc-preset-btn" data-mc-preset="pizza">🍕 <span data-i18n="mc.preset.pizza">Pepperoni vs Margherita</span></button>
+          <button type="button" class="mc-preset-btn" data-mc-preset="taco">🌮 <span data-i18n="mc.preset.taco">Beef vs Veggie Tacos</span></button>
+          <button type="button" class="mc-preset-btn" data-mc-preset="milk">🥛 <span data-i18n="mc.preset.milk">Dairy vs Oat Milk Latte</span></button>
+        </div>
+
+        <div class="mc-plates">
+          <div class="mc-plate" data-mc-plate="A">
+            <div class="mc-plate-header">
+              <span class="mc-plate-badge mc-plate-badge-a">A</span>
+              <input type="text" class="mc-plate-name" data-mc-name="A" value="Plate A" />
+            </div>
+            <div class="mc-add-row">
+              <select class="mc-cat-select" data-mc-cat="A"></select>
+              <select class="mc-item-select" data-mc-item="A"></select>
+              <button type="button" class="btn-primary mc-add-btn" data-mc-add="A" data-i18n="mc.add">+ Add</button>
+            </div>
+            <ul class="mc-plate-items" data-mc-list="A"></ul>
+            <div class="mc-plate-totals" data-mc-totals="A"></div>
+          </div>
+
+          <div class="mc-plate" data-mc-plate="B">
+            <div class="mc-plate-header">
+              <span class="mc-plate-badge mc-plate-badge-b">B</span>
+              <input type="text" class="mc-plate-name" data-mc-name="B" value="Plate B" />
+            </div>
+            <div class="mc-add-row">
+              <select class="mc-cat-select" data-mc-cat="B"></select>
+              <select class="mc-item-select" data-mc-item="B"></select>
+              <button type="button" class="btn-primary mc-add-btn" data-mc-add="B" data-i18n="mc.add">+ Add</button>
+            </div>
+            <ul class="mc-plate-items" data-mc-list="B"></ul>
+            <div class="mc-plate-totals" data-mc-totals="B"></div>
+          </div>
+        </div>
+
+        <div class="mc-chart-card">
+          <h3 class="mc-chart-title" data-i18n="mc.chartTitle">📊 Side-by-side footprint</h3>
+          <div class="mc-chart" id="mc-chart"></div>
+        </div>
+
+        <div class="mc-verdict" id="mc-verdict"></div>
+
+        <p class="rt-disclaimer" data-i18n="mc.disclaimer">💡 Footprints are typical per-serving averages from Poore &amp; Nemecek (Science, 2018) and Mekonnen &amp; Hoekstra (Water Footprint Network). Real values vary with farming method, transport and waste — these figures show the order of magnitude.</p>
+      </div>
+
+      <!-- VAMPIRE POWER CALCULATOR -->
+      <div class="tab-panel" id="panel-vampire">
+        <div class="panel-header">
+          <h2 data-i18n="vamp.title">🧛 Vampire Power Calculator</h2>
+          <p data-i18n="vamp.sub">Even when “off,” many devices keep drawing power 24/7. Tick everything you leave plugged in to see how much energy and money those silent loads cost you each year.</p>
+        </div>
+
+        <div class="vamp-controls">
+          <label class="vamp-control">
+            <span data-i18n="vamp.regionLabel">Country / region</span>
+            <select id="vamp-region"></select>
+          </label>
+          <label class="vamp-control">
+            <span data-i18n="vamp.priceLabel">Electricity price</span>
+            <span class="vamp-price-row">
+              <input type="number" id="vamp-price" step="0.01" min="0" inputmode="decimal">
+              <span id="vamp-price-currency" class="vamp-price-currency">$ / kWh</span>
+            </span>
+          </label>
+          <label class="vamp-control">
+            <span data-i18n="vamp.gridLabel">Grid intensity (g CO₂ / kWh)</span>
+            <input type="number" id="vamp-grid" step="1" min="0">
+          </label>
+          <button type="button" id="vamp-reset-btn" class="btn-secondary" data-i18n="vamp.reset">Reset defaults</button>
+        </div>
+
+        <div class="vamp-actions">
+          <button type="button" id="vamp-all-btn"  class="btn-secondary" data-i18n="vamp.checkAll">✓ Check all</button>
+          <button type="button" id="vamp-none-btn" class="btn-secondary" data-i18n="vamp.checkNone">✗ Clear all</button>
+          <button type="button" id="vamp-typical-btn" class="btn-secondary" data-i18n="vamp.typical">🏠 Typical home</button>
+        </div>
+
+        <div id="vamp-grid-list" class="vamp-list"></div>
+
+        <div class="vamp-results" id="vamp-results"></div>
+
+        <p class="rt-disclaimer" data-i18n="vamp.disclaimer">💡 Standby wattages are typical averages compiled from Lawrence Berkeley National Lab, IEA 4E and EU Ecodesign reports. Modern devices on the latest standards draw less; older equipment can draw far more. Adjust electricity price and grid intensity for your country to refine the result.</p>
+      </div>
+
+      <!-- ECO-LAUNDRY SCHEDULER -->
+      <div class="tab-panel" id="panel-laundry">
+        <div class="panel-header">
+          <h2 data-i18n="laundry.title">🧺 Eco-Laundry Scheduler</h2>
+          <p data-i18n="laundry.sub">A tumble dryer burns ~3 kWh per load. Wash when conditions favour line-drying and you skip nearly all of that. This tool reads live weather and finds the best wash & line-dry windows for your location.</p>
+        </div>
+
+        <div class="laundry-controls">
+          <label class="laundry-city-label">
+            <span data-i18n="laundry.cityLabel">City</span>
+            <span class="laundry-city-row">
+              <input type="text" id="laundry-city" placeholder="London" autocomplete="off">
+              <button type="button" id="laundry-city-btn" class="btn-primary" data-i18n="laundry.update">Update</button>
+              <button type="button" id="laundry-geo-btn" class="btn-secondary" title="Use my location" data-i18n="laundry.useGeo">📍 Use my location</button>
+            </span>
+          </label>
+          <div id="laundry-status" class="laundry-status"></div>
+        </div>
+
+        <div id="laundry-results" class="laundry-results"></div>
+
+        <p class="rt-disclaimer" data-i18n="laundry.disclaimer">💡 Forecast data from Open-Meteo (free, no API key, ECMWF + national weather services). Drying-friendliness score combines temperature, humidity, wind, cloud cover and precipitation probability — higher is better. A typical electric tumble dryer uses 2–4 kWh per load; line-drying when conditions allow eliminates almost all of that emission.</p>
+      </div>
+
+      <!-- PERSONAL FOOTPRINT TRACKER DASHBOARD -->
+      <div class="tab-panel" id="panel-tracker">
+        <div class="panel-header">
+          <h2 data-i18n="trk.title">📈 Personal Footprint Tracker</h2>
+          <p data-i18n="trk.sub">Log your daily activities and watch your carbon footprint over time. Hit the Paris-aligned target of 2.5 kg CO₂ / day to earn badges and march toward Net Zero.</p>
+        </div>
+
+        <!-- Headline cards -->
+        <div class="trk-headlines" id="trk-headlines"></div>
+
+        <!-- Progress toward Net Zero -->
+        <div class="trk-progress-card" id="trk-progress"></div>
+
+        <!-- Entry form -->
+        <details class="trk-form-card" id="trk-form-card" open>
+          <summary class="trk-form-summary">
+            <span class="trk-form-summary-icon">✏️</span>
+            <span data-i18n="trk.formTitle">Log today's activities</span>
+          </summary>
+          <div class="trk-form-body">
+            <div class="trk-form-row">
+              <label class="trk-field">
+                <span data-i18n="trk.dateLabel">Date</span>
+                <input type="date" id="trk-date">
+              </label>
+              <div class="trk-form-presets">
+                <button type="button" class="btn-secondary" data-trk-preset="typical" data-i18n="trk.preset.typical">🚗 Typical day</button>
+                <button type="button" class="btn-secondary" data-trk-preset="eco" data-i18n="trk.preset.eco">🌱 Eco day</button>
+                <button type="button" class="btn-secondary" data-trk-preset="travel" data-i18n="trk.preset.travel">✈️ Travel day</button>
+              </div>
+            </div>
+
+            <div class="trk-form-grid">
+              <label class="trk-field"><span data-i18n="trk.car">🚗 Car (km)</span><input type="number" id="trk-carKm" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.bus">🚌 Bus (km)</span><input type="number" id="trk-busKm" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.train">🚆 Train (km)</span><input type="number" id="trk-trainKm" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.flight">✈️ Flight (km)</span><input type="number" id="trk-flightKm" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.beef">🥩 Beef meals</span><input type="number" id="trk-beefMeals" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.chicken">🍗 Chicken meals</span><input type="number" id="trk-chickMeals" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.plant">🥗 Plant meals</span><input type="number" id="trk-plantMeals" min="0" step="1" value="0"></label>
+              <label class="trk-field"><span data-i18n="trk.kwh">⚡ Electricity (kWh)</span><input type="number" id="trk-kwh" min="0" step="0.1" value="0"></label>
+            </div>
+
+            <div class="trk-form-total">
+              <span data-i18n="trk.estimatedTotal">Estimated daily total</span>
+              <strong id="trk-live-total">0.0 kg CO₂</strong>
+            </div>
+
+            <div class="trk-form-actions">
+              <button type="button" class="btn-primary" id="trk-save-btn" data-i18n="trk.save">💾 Save entry</button>
+              <button type="button" class="btn-secondary" id="trk-delete-btn" data-i18n="trk.deleteToday">🗑️ Delete this date</button>
+              <button type="button" class="btn-secondary" id="trk-clear-btn" data-i18n="trk.clearAll">🧹 Clear all data</button>
+            </div>
+            <div id="trk-save-msg" class="trk-save-msg"></div>
+          </div>
+        </details>
+
+        <!-- 30-day line chart -->
+        <div class="trk-chart-card">
+          <h3 class="trk-section-title" data-i18n="trk.chartTitle">📊 30-day footprint trend</h3>
+          <div class="trk-chart-wrap" id="trk-chart-wrap"></div>
+          <div class="trk-chart-legend">
+            <span class="trk-legend-item"><span class="trk-legend-dot trk-legend-line"></span><span data-i18n="trk.legend.daily">Daily kg CO₂</span></span>
+            <span class="trk-legend-item"><span class="trk-legend-dot trk-legend-target"></span><span data-i18n="trk.legend.target">Net-Zero target (2.5 kg)</span></span>
+            <span class="trk-legend-item"><span class="trk-legend-dot trk-legend-global"></span><span data-i18n="trk.legend.global">Global avg (12.5 kg)</span></span>
+          </div>
+        </div>
+
+        <!-- Badges grid -->
+        <div class="trk-badges-card">
+          <h3 class="trk-section-title" data-i18n="trk.badgesTitle">🏆 Reward badges</h3>
+          <div class="trk-badges" id="trk-badges"></div>
+        </div>
+
+        <p class="rt-disclaimer" data-i18n="trk.disclaimer">💡 Coefficients: car 0.17 kg/km, bus 0.09, train 0.035, flight (short-haul economy) 0.255; beef meal 6.0 kg, chicken 1.6, plant-based 0.5; grid electricity 0.38 kg/kWh. Targets: 2.5 kg/day is the IPCC 1.5 °C-aligned per-capita budget by 2030; current global average is ~12.5 kg/day. All data stored locally in your browser — nothing leaves your device.</p>
+      </div>
+
+      <!-- ECO QUIZ -->
+      <div class="tab-panel" id="panel-quiz">
+        <div class="panel-header">
+          <h2 data-i18n="quiz.title">Sustainability Quiz</h2>
+          <p data-i18n="quiz.sub">Test your eco-knowledge and discover new ways to protect our planet.</p>
+        </div>
+        <div id="quiz-start-screen">
+          <div class="quiz-intro">
+            <div class="quiz-stats">
+              <div class="stat"><span class="stat-num">10</span><span>Questions</span></div>
+              <div class="stat"><span class="stat-num">~3</span><span>Minutes</span></div>
+              <div class="stat"><span class="stat-num">5</span><span>Topics</span></div>
+            </div>
+            <p>Topics covered: Climate Change · Recycling · Energy · Biodiversity · Sustainable Living</p>
+            <button class="btn-primary large" id="start-quiz-btn" data-i18n="quiz.start">Start Quiz</button>
+          </div>
+        </div>
+        <div id="quiz-screen" class="hidden">
+          <div class="quiz-progress">
+            <div class="progress-bar"><div class="progress-fill" id="quiz-progress-fill"></div></div>
+            <span id="quiz-progress-text">Question 1 of 10</span>
+          </div>
+          <div class="question-card" id="question-card">
+            <p class="question-category" id="question-category"></p>
+            <h3 class="question-text" id="question-text"></h3>
+            <div class="options-grid" id="options-grid"></div>
+          </div>
+          <div class="quiz-feedback hidden" id="quiz-feedback"></div>
+          <button class="btn-primary hidden" id="next-btn">Next Question →</button>
+        </div>
+        <div id="quiz-result-screen" class="hidden">
+          <div class="quiz-final">
+            <div class="score-circle" id="score-circle">
+              <span id="final-score">0/10</span>
+            </div>
+            <h3 id="quiz-result-title"></h3>
+            <p id="quiz-result-msg"></p>
+            <div class="result-badges" id="result-badges"></div>
+            <button class="btn-primary large" id="retake-btn" data-i18n="quiz.retake">Retake Quiz</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHAT BIN — DROP GAME (Tetris-style) -->
+      <div class="tab-panel" id="panel-sorter">
+        <div class="panel-header">
+          <h2 data-i18n="sort.title">🎮 The "What Bin?" Drop Game</h2>
+          <p data-i18n="sort.sub">Trash is raining from the sky — sort each piece before it hits the floor! Move with arrow keys, or tap a bin to send it there.</p>
+        </div>
+
+        <div id="sorter-start">
+          <div class="sorter-intro">
+            <span class="sorter-intro-icon">🌧️🗑️➡️♻️</span>
+            <p>Items fall from the top. Steer them into the correct bin to score points. You start with <strong>3 lives</strong> — every wrong sort costs one. The longer you play, the faster it gets!</p>
+            <ul class="how-to-play">
+              <li><strong>← →</strong> move the falling item</li>
+              <li><strong>↓ / space</strong> fast-drop</li>
+              <li><strong>tap a bin</strong> send it straight there</li>
+            </ul>
+            <button class="btn-primary large" id="sorter-start-btn" data-i18n="sort.start">▶️ Start Game</button>
+          </div>
+        </div>
+
+        <div id="sorter-game" class="hidden">
+          <div class="sorter-hud">
+            <div class="hud-stat"><span class="hud-label">Score</span><strong class="hud-val" id="sorter-score">0</strong></div>
+            <div class="hud-stat"><span class="hud-label">Sorted</span><strong class="hud-val" id="sorter-sorted">0</strong></div>
+            <div class="hud-stat"><span class="hud-label">Lives</span><strong class="hud-val" id="sorter-lives">❤️❤️❤️</strong></div>
+            <div class="hud-stat"><span class="hud-label">Speed</span><strong class="hud-val" id="sorter-speed">×1.0</strong></div>
+          </div>
+
+          <div class="playfield" id="playfield" tabindex="0">
+            <span class="playfield-cloud cloud-1" aria-hidden="true">☁️</span>
+            <span class="playfield-cloud cloud-2" aria-hidden="true">☁️</span>
+            <div class="falling-item" id="falling-item">
+              <span class="falling-icon">🍕</span>
+              <span class="falling-name">Item</span>
+            </div>
+            <div class="score-pop" id="score-pop"></div>
+          </div>
+
+          <div class="bins-row" id="bins-row"></div>
+
+          <div class="sorter-feedback hidden" id="sorter-feedback"></div>
+
+          <div class="sorter-controls">
+            <button class="ctrl-btn" id="ctrl-left"  aria-label="Move left">◀</button>
+            <button class="ctrl-btn" id="ctrl-down"  aria-label="Fast drop">⬇</button>
+            <button class="ctrl-btn" id="ctrl-right" aria-label="Move right">▶</button>
+          </div>
+        </div>
+
+        <div id="sorter-result" class="hidden">
+          <div class="sorter-final">
+            <div class="score-circle" id="sorter-score-circle">
+              <span id="sorter-final-score">0</span>
+            </div>
+            <h3 id="sorter-result-title"></h3>
+            <p id="sorter-result-msg"></p>
+            <div class="sorter-recap" id="sorter-recap"></div>
+            <button class="btn-primary large" id="sorter-retry-btn" data-i18n="sort.again">🔁 Play Again</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CIRCULAR ECONOMY WALKTHROUGH -->
+      <div class="tab-panel" id="panel-circular">
+        <div class="panel-header">
+          <h2 data-i18n="circ.title">Circular Economy Walkthrough</h2>
+          <p data-i18n="circ.sub">Scroll through the life cycle of an everyday object — from raw material to final fate — and see how a circular economy closes the loop.</p>
+        </div>
+
+        <div class="product-switch">
+          <span class="product-switch-label">Choose an object:</span>
+          <button class="product-btn active" data-product="smartphone">📱 Smartphone</button>
+          <button class="product-btn" data-product="tshirt">👕 Cotton T-Shirt</button>
+        </div>
+
+        <div class="cycle-diagram" id="cycle-diagram">
+          <svg class="cycle-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <circle class="cycle-ring"  cx="50" cy="50" r="38" fill="none" stroke="#d8f3dc"  stroke-width="0.6" stroke-dasharray="1.6 1.6" />
+            <circle class="cycle-ring2" cx="50" cy="50" r="38" fill="none" stroke="#74c69d"  stroke-width="0.4" stroke-dasharray="0.6 6"   opacity=".5" />
+          </svg>
+          <div class="cycle-center" id="cycle-center">
+            <span class="cycle-stage-num" id="cycle-stage-num">1</span>
+            <div class="cycle-stage-phase" id="cycle-stage-phase">Phase</div>
+            <div class="cycle-stage-title" id="cycle-stage-title">Title</div>
+            <p class="cycle-stage-desc" id="cycle-stage-desc">Description</p>
+            <div class="cycle-stage-stat">
+              <span class="cycle-stat-num" id="cycle-stat-num">—</span>
+              <span class="cycle-stat-label" id="cycle-stat-label">—</span>
+            </div>
+          </div>
+          <div class="cycle-nodes" id="cycle-nodes"></div>
+        </div>
+
+        <div class="cycle-nav">
+          <button class="cycle-nav-btn" id="cycle-prev" aria-label="Previous stage">◀</button>
+          <span class="cycle-counter"><span id="cycle-cur">1</span> / <span id="cycle-total">6</span></span>
+          <button class="cycle-nav-btn" id="cycle-next" aria-label="Next stage">▶</button>
+          <button class="cycle-play-btn" id="cycle-play">⏸ Pause</button>
+        </div>
+
+        <div class="loop-banner">
+          <h3>♻️ Linear vs. Circular</h3>
+          <p>A <strong>linear</strong> economy follows "take → make → waste". A <strong>circular</strong> economy keeps materials in use through repair, reuse and recycling — designing waste out of the system entirely.</p>
+        </div>
+      </div>
+
+      <!-- THRIFT & SAVE -->
+      <div class="tab-panel" id="panel-thrift">
+        <div class="panel-header">
+          <h2 data-i18n="thrift.title">Thrift & Save 👕💸</h2>
+          <p data-i18n="thrift.sub">Spend less, look great, save the planet — see exactly how much going secondhand pays off.</p>
+        </div>
+
+        <h3 class="home-section-title">Why Thrift? 6 Big Wins</h3>
+        <p class="home-section-sub">Secondhand shopping is one of the highest-impact (and easiest) eco habits.</p>
+        <div class="thrift-benefits">
+          <div class="benefit-card">
+            <span class="benefit-icon">💰</span>
+            <h4>Save Serious Money</h4>
+            <p>Thrift prices are typically <strong>60–85% lower</strong> than retail — same quality, fraction of the cost.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🌍</span>
+            <h4>Slash Your Footprint</h4>
+            <p>Every reused garment skips the water, energy and emissions of a fresh manufacturing run.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">♻️</span>
+            <h4>Cut Textile Waste</h4>
+            <p>Over <strong>70% of clothing</strong> is landfilled or incinerated. Buying secondhand keeps perfectly good clothes in use.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🌟</span>
+            <h4>Unique Style</h4>
+            <p>Score vintage gems and one-of-a-kind pieces nobody else on your street is wearing.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🧵</span>
+            <h4>Built to Last</h4>
+            <p>Older garments were often made with thicker fabrics and better stitching than today's fast fashion.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="benefit-icon">🤝</span>
+            <h4>Support Causes</h4>
+            <p>Charity shops fund shelters, food banks, hospices and local community programs.</p>
+          </div>
+        </div>
+
+        <h3 class="home-section-title">New vs. Thrift — Average Prices 📊</h3>
+        <p class="home-section-sub">Typical retail prices vs. what you'd pay secondhand for the same item.</p>
+        <div class="thrift-chart" id="thrift-chart"></div>
+
+        <h3 class="home-section-title">Your Yearly Savings Calculator 🧮</h3>
+        <p class="home-section-sub">How many of each item do you usually buy in a year? Slide and watch your savings stack up.</p>
+
+        <div class="savings-grid" id="savings-grid"></div>
+
+        <div class="savings-summary">
+          <div class="savings-box savings-new">
+            <span class="savings-icon">🛍️</span>
+            <span class="savings-amount">$<span id="cost-new">0</span></span>
+            <span class="savings-label">If you buy new</span>
+          </div>
+          <div class="savings-box savings-thrift">
+            <span class="savings-icon">♻️</span>
+            <span class="savings-amount">$<span id="cost-thrift">0</span></span>
+            <span class="savings-label">Going thrift</span>
+          </div>
+          <div class="savings-box savings-save">
+            <span class="savings-icon">💸</span>
+            <span class="savings-amount">$<span id="cost-save">0</span></span>
+            <span class="savings-label">You save / year</span>
+          </div>
+        </div>
+        <div class="savings-fun" id="savings-fun">👆 Move the sliders above to see how much you'd save by thrifting!</div>
+      </div>
+
+      <!-- LEARN: SDG ACTIONS -->
+      <div class="tab-panel" id="panel-sdgs">
+        <div class="panel-header">
+          <h2 data-i18n="sdgActions.title">🎯 SDG Actions — Small Things You Can Do</h2>
+          <p data-i18n="sdgActions.sub">Pick any of the 17 UN Sustainable Development Goals below to see concrete, small-scale personal actions you can take this week.</p>
+        </div>
+        <div class="sdg-grid">
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="1"  style="--sdg:#E5243B"><span class="sdg-num">1</span><span class="sdg-icon">🚫</span><span class="sdg-name" data-i18n="sdg.1">No Poverty</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="2"  style="--sdg:#DDA63A"><span class="sdg-num">2</span><span class="sdg-icon">🌾</span><span class="sdg-name" data-i18n="sdg.2">Zero Hunger</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="3"  style="--sdg:#4C9F38"><span class="sdg-num">3</span><span class="sdg-icon">❤️‍🩹</span><span class="sdg-name" data-i18n="sdg.3">Good Health &amp; Well-being</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="4"  style="--sdg:#C5192D"><span class="sdg-num">4</span><span class="sdg-icon">📚</span><span class="sdg-name" data-i18n="sdg.4">Quality Education</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="5"  style="--sdg:#FF3A21"><span class="sdg-num">5</span><span class="sdg-icon">⚧️</span><span class="sdg-name" data-i18n="sdg.5">Gender Equality</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="6"  style="--sdg:#26BDE2"><span class="sdg-num">6</span><span class="sdg-icon">💧</span><span class="sdg-name" data-i18n="sdg.6">Clean Water &amp; Sanitation</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="7"  style="--sdg:#FCC30B"><span class="sdg-num">7</span><span class="sdg-icon">⚡</span><span class="sdg-name" data-i18n="sdg.7">Affordable &amp; Clean Energy</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="8"  style="--sdg:#A21942"><span class="sdg-num">8</span><span class="sdg-icon">💼</span><span class="sdg-name" data-i18n="sdg.8">Decent Work &amp; Economic Growth</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="9"  style="--sdg:#FD6925"><span class="sdg-num">9</span><span class="sdg-icon">🏗️</span><span class="sdg-name" data-i18n="sdg.9">Industry, Innovation &amp; Infrastructure</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="10" style="--sdg:#DD1367"><span class="sdg-num">10</span><span class="sdg-icon">⚖️</span><span class="sdg-name" data-i18n="sdg.10">Reduced Inequalities</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="11" style="--sdg:#FD9D24"><span class="sdg-num">11</span><span class="sdg-icon">🏙️</span><span class="sdg-name" data-i18n="sdg.11">Sustainable Cities &amp; Communities</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="12" style="--sdg:#BF8B2E"><span class="sdg-num">12</span><span class="sdg-icon">♻️</span><span class="sdg-name" data-i18n="sdg.12">Responsible Consumption &amp; Production</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="13" style="--sdg:#3F7E44"><span class="sdg-num">13</span><span class="sdg-icon">🌡️</span><span class="sdg-name" data-i18n="sdg.13">Climate Action</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="14" style="--sdg:#0A97D9"><span class="sdg-num">14</span><span class="sdg-icon">🐠</span><span class="sdg-name" data-i18n="sdg.14">Life Below Water</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="15" style="--sdg:#56C02B"><span class="sdg-num">15</span><span class="sdg-icon">🌳</span><span class="sdg-name" data-i18n="sdg.15">Life on Land</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="16" style="--sdg:#00689D"><span class="sdg-num">16</span><span class="sdg-icon">☮️</span><span class="sdg-name" data-i18n="sdg.16">Peace, Justice &amp; Strong Institutions</span></button>
+          <button type="button" class="sdg-card sdg-action-card" data-action-sdg="17" style="--sdg:#19486A"><span class="sdg-num">17</span><span class="sdg-icon">🤝</span><span class="sdg-name" data-i18n="sdg.17">Partnerships for the Goals</span></button>
+        </div>
+        <div class="sdg-actions-display" id="sdg-actions-display">
+          <div class="sdg-actions-prompt" data-i18n="sdgActions.prompt">⬆️ Pick a goal above to see five small actions you can take to support it.</div>
+        </div>
+      </div>
+
+      <!-- ENERGY GRID BALANCER -->
+      <div class="tab-panel" id="panel-energy">
+        <div class="panel-header">
+          <h2 data-i18n="energy.title">⚡ Energy Grid Balancer</h2>
+          <p data-i18n="energy.sub">Power up the city using only renewable energy — and resist the tempting fossil fuels!</p>
+        </div>
+
+        <div id="energy-start">
+          <div class="sorter-intro">
+            <span class="sorter-intro-icon">🏙️⚡🌬️☀️</span>
+            <p>5 levels. Each one shows a city with a power demand (in MW). Add energy sources from the palette until you meet the demand — but only <strong>renewables</strong> count!</p>
+            <ul class="how-to-play">
+              <li><strong>Click a source</strong> to connect it to the grid</li>
+              <li><strong>Click a placed source</strong> to remove it</li>
+              <li><strong>⚡ Power Up</strong> when you think you're ready</li>
+              <li>☣️ Coal & gas <strong>fail the level</strong> — clean energy only!</li>
+            </ul>
+            <button class="btn-primary large" id="energy-start-btn" data-i18n="energy.start">⚡ Start Quest</button>
+          </div>
+        </div>
+
+        <div id="energy-game" class="hidden">
+          <div class="energy-hud">
+            <div class="hud-stat"><span class="hud-label">Level</span><strong class="hud-val" id="energy-level-num">1</strong></div>
+            <div class="hud-stat"><span class="hud-label">Demand</span><strong class="hud-val"><span id="energy-demand-val">10</span> MW</strong></div>
+            <div class="hud-stat"><span class="hud-label">Stars</span><strong class="hud-val" id="energy-total-stars">0</strong></div>
+          </div>
+
+          <div class="level-title" id="energy-level-name">Light the Village</div>
+
+          <div class="city-scene">
+            <span class="city-cloud city-cloud-1" aria-hidden="true">☁️</span>
+            <span class="city-cloud city-cloud-2" aria-hidden="true">☁️</span>
+            <div class="city-smoke" id="city-smoke"></div>
+            <div class="city-buildings" id="city-buildings"></div>
+          </div>
+
+          <div class="power-meter-wrap">
+            <div class="power-meter">
+              <div class="power-bar" id="power-bar"></div>
+              <div class="power-bar-fossil" id="power-bar-fossil"></div>
+            </div>
+            <div class="power-label">
+              <span>Output: <strong><span id="power-val">0</span></strong> MW</span>
+              <span>Target: <strong id="power-target">10</strong> MW</span>
+            </div>
+          </div>
+
+          <h4 class="section-mini">Available Energy Sources</h4>
+          <div class="energy-sources" id="energy-sources"></div>
+
+          <h4 class="section-mini">Connected to Grid</h4>
+          <div class="energy-placed" id="energy-placed">
+            <div class="energy-placed-empty">Click a source above to add it</div>
+          </div>
+
+          <div class="energy-feedback hidden" id="energy-feedback"></div>
+
+          <div class="energy-actions">
+            <button class="btn-primary" id="power-up-btn">⚡ Power Up!</button>
+            <button class="btn-outline" id="energy-reset-btn">🔄 Reset Level</button>
+          </div>
+        </div>
+
+        <div id="energy-result" class="hidden">
+          <div class="sorter-final">
+            <div class="score-circle" id="energy-result-circle"><span id="energy-result-stars">⭐⭐⭐</span></div>
+            <h3 id="energy-result-title">Level Complete!</h3>
+            <p id="energy-result-msg"></p>
+            <button class="btn-primary large" id="energy-next-btn">Next Level →</button>
+          </div>
+        </div>
+
+        <div id="energy-complete" class="hidden">
+          <div class="sorter-final">
+            <div class="score-circle" style="background:linear-gradient(135deg,#1b4332,#40916c)"><span>🏆</span></div>
+            <h3>Quest Complete!</h3>
+            <p id="energy-complete-msg">You powered the entire region with clean energy. The grid is yours!</p>
+            <div class="result-badges" id="energy-final-badges"></div>
+            <button class="btn-primary large" id="energy-restart-btn">🔁 Play Again</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ECO-HERO QUEST -->
+      <div class="tab-panel" id="panel-quest">
+        <div class="panel-header">
+          <h2 data-i18n="quest.title">🦸 Eco-Hero Quest</h2>
+          <p data-i18n="quest.sub">5 questions. 1 footprint. Unlock your Eco-Hero rank in 60 seconds!</p>
+        </div>
+
+        <div id="quest-start">
+          <div class="sorter-intro">
+            <span class="sorter-intro-icon">🦸‍♀️ ⚔️ 🦸‍♂️</span>
+            <p>Pick the option closest to your real lifestyle in each level. Your choices reveal your annual carbon footprint — and your Eco-Hero rank!</p>
+            <div class="rank-preview">
+              <span class="rank-mini">🌱 Sprout</span>
+              <span class="rank-mini">🌿 Eco Friend</span>
+              <span class="rank-mini">🌳 Eco Warrior</span>
+              <span class="rank-mini">🌍 Planet Hero</span>
+              <span class="rank-mini">🦸 Eco Legend</span>
+            </div>
+            <button class="btn-primary large" id="quest-start-btn" data-i18n="quest.begin">⚔️ Begin Quest</button>
+          </div>
+        </div>
+
+        <div id="quest-game" class="hidden">
+          <div class="quest-progress" id="quest-progress"></div>
+          <div class="quest-level-label" id="quest-level-label">Level 1 of 5</div>
+          <h3 class="quest-question" id="quest-question">Question</h3>
+          <div class="quest-options" id="quest-options"></div>
+        </div>
+
+        <div id="quest-result" class="hidden">
+          <div class="quest-reveal">
+            <div class="quest-badge" id="quest-badge">🦸</div>
+            <h3 class="quest-rank-name" id="quest-rank-name">Eco Legend</h3>
+            <p class="quest-rank-desc" id="quest-rank-desc"></p>
+            <div class="quest-footprint">
+              <span class="quest-footprint-num" id="quest-footprint-num">0</span>
+              <span class="quest-footprint-unit">tonnes CO₂ / year</span>
+            </div>
+            <div class="quest-badges-earned" id="quest-badges-earned"></div>
+            <div class="quest-actions">
+              <button class="btn-primary large" id="quest-retry-btn">⚔️ Retry Quest</button>
+              <button class="btn-outline" data-goto="calculator">📊 Try Detailed Calculator</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORLD: LIVE CARBON COUNTER -->
+      <div class="tab-panel" id="panel-live">
+        <div class="panel-header">
+          <h2 data-i18n="live.title">📡 Live Carbon Counter</h2>
+          <p data-i18n="live.sub">Real-time global indicators ticking up since January 1st of this year.</p>
+        </div>
+        <div class="live-counters">
+          <div class="live-card live-bad">
+            <span class="live-icon">🏭</span>
+            <div class="live-num" data-counter="co2">0</div>
+            <div class="live-unit" data-i18n="live.co2.unit">tonnes of CO₂</div>
+            <div class="live-label" data-i18n="live.co2.label">emitted globally</div>
+            <div class="live-rate">≈ 1,186 t / second</div>
+          </div>
+          <div class="live-card live-bad">
+            <span class="live-icon">🌳</span>
+            <div class="live-num" data-counter="forest">0</div>
+            <div class="live-unit" data-i18n="live.forest.unit">hectares of forest</div>
+            <div class="live-label" data-i18n="live.forest.label">lost</div>
+            <div class="live-rate">≈ 1 ha every 3s</div>
+          </div>
+          <div class="live-card live-bad">
+            <span class="live-icon">🌊</span>
+            <div class="live-num" data-counter="plastic">0</div>
+            <div class="live-unit" data-i18n="live.plastic.unit">kg of plastic</div>
+            <div class="live-label" data-i18n="live.plastic.label">dumped in the ocean</div>
+            <div class="live-rate">≈ 349 kg / second</div>
+          </div>
+          <div class="live-card live-bad">
+            <span class="live-icon">🚶</span>
+            <div class="live-num" data-counter="displaced">0</div>
+            <div class="live-unit" data-i18n="live.displaced.unit">people</div>
+            <div class="live-label" data-i18n="live.displaced.label">displaced by climate disasters</div>
+            <div class="live-rate">≈ 1 every 1.4s</div>
+          </div>
+          <div class="live-card live-good">
+            <span class="live-icon">☀️</span>
+            <div class="live-num" data-counter="solar">0</div>
+            <div class="live-unit" data-i18n="live.solar.unit">MW of solar</div>
+            <div class="live-label" data-i18n="live.solar.label">capacity added globally 🚀</div>
+            <div class="live-rate">≈ 11 MW / second</div>
+          </div>
+        </div>
+        <div class="live-sources">
+          <strong data-i18n="live.sources">Sources:</strong>
+          <a href="https://ourworldindata.org/co2-emissions" target="_blank" rel="noopener">Our World in Data</a> ·
+          <a href="https://www.globalforestwatch.org/" target="_blank" rel="noopener">Global Forest Watch</a> ·
+          <a href="https://www.unhcr.org/climate-change-and-disaster-displacement.html" target="_blank" rel="noopener">UNHCR</a> ·
+          <a href="https://www.iea.org/" target="_blank" rel="noopener">IEA</a> ·
+          <a href="https://oceanconservancy.org/" target="_blank" rel="noopener">Ocean Conservancy</a>
+        </div>
+      </div>
+
+      <!-- WORLD: SEA LEVEL MAP -->
+      <div class="tab-panel" id="panel-sea">
+        <div class="panel-header">
+          <h2 data-i18n="sea.title">🌊 Sea Level Rise Map</h2>
+          <p data-i18n="sea.sub">Slide between warming scenarios to see how coastal cities and cultural landmarks are projected to fare.</p>
+        </div>
+        <div class="sea-control">
+          <div class="sea-level-buttons" id="sea-level-buttons">
+            <button class="sea-level-btn active" data-level="0">+1.5°C</button>
+            <button class="sea-level-btn" data-level="1">+2°C</button>
+            <button class="sea-level-btn" data-level="2">+3°C</button>
+            <button class="sea-level-btn" data-level="3">+4°C</button>
+          </div>
+          <input type="range" id="sea-slider" min="0" max="3" value="0" step="1" class="sea-slider" />
+        </div>
+        <div class="sea-headline" id="sea-headline"></div>
+        <div class="sea-cities" id="sea-cities"></div>
+        <div class="live-sources">
+          <strong data-i18n="live.sources">Sources:</strong>
+          <a href="https://www.climatecentral.org/" target="_blank" rel="noopener">Climate Central</a> ·
+          <a href="https://coastal.climatecentral.org/map" target="_blank" rel="noopener">Coastal Risk Screening Tool</a> ·
+          <a href="https://www.ipcc.ch/report/ar6/wg1/" target="_blank" rel="noopener">IPCC AR6</a>
+        </div>
+      </div>
+
+      <!-- WORLD: CLIMATE REFUGEE STORIES -->
+      <div class="tab-panel" id="panel-refugees">
+        <div class="panel-header">
+          <h2 data-i18n="ref.title">💬 Climate Refugee Stories</h2>
+          <p data-i18n="ref.sub">The human cost of climate change — first-hand accounts from communities already on the move.</p>
+        </div>
+        <div class="stat-strip">
+          <div><strong>23M</strong><span data-i18n="ref.stat1">people displaced by climate disasters every year</span></div>
+          <div><strong>216M</strong><span data-i18n="ref.stat2">projected climate migrants by 2050 (World Bank)</span></div>
+          <div><strong>3.6B</strong><span data-i18n="ref.stat3">people live in climate-vulnerable regions</span></div>
+        </div>
+        <div class="stories-grid" id="stories-grid"></div>
+        <div class="live-sources">
+          <strong data-i18n="live.sources">Sources:</strong>
+          <a href="https://www.unhcr.org/" target="_blank" rel="noopener">UNHCR</a> ·
+          <a href="https://www.internal-displacement.org/" target="_blank" rel="noopener">IDMC</a> ·
+          <a href="https://www.worldbank.org/en/news/press-release/2021/09/13/climate-change-could-force-216-million-people-to-migrate-within-their-own-countries-by-2050" target="_blank" rel="noopener">World Bank Groundswell</a>
+        </div>
+      </div>
+
+      <!-- WORLD: LOCALIZED ACTIVISM FINDER -->
+      <div class="tab-panel" id="panel-activism">
+        <div class="panel-header">
+          <h2 data-i18n="act.title">📍 Localized Activism Finder</h2>
+          <p data-i18n="act.sub">Enter your city to find climate protests, community gardens, NGO chapters, voting info and cleanups near you.</p>
+        </div>
+        <div class="activism-cities">
+          <button class="activism-city-btn" data-city="paris"  data-i18n="act.city.paris">🇫🇷 Paris</button>
+          <button class="activism-city-btn" data-city="ny"     data-i18n="act.city.ny">🇺🇸 New York</button>
+          <button class="activism-city-btn" data-city="london" data-i18n="act.city.london">🇬🇧 London</button>
+          <button class="activism-city-btn" data-city="berlin" data-i18n="act.city.berlin">🇩🇪 Berlin</button>
+          <button class="activism-city-btn" data-city="taipei" data-i18n="act.city.taipei">🇹🇼 Taipei</button>
+        </div>
+        <div class="activism-results" id="activism-results">
+          <div class="activism-prompt" data-i18n="act.prompt">
+            ⬆️ Pick a city above to see verified local climate groups you can actually plug into this week.
+          </div>
+        </div>
+      </div>
+
+      <!-- WORLD: CORPORATE ACCOUNTABILITY TRACKER -->
+      <div class="tab-panel" id="panel-corporate">
+        <div class="panel-header">
+          <h2 data-i18n="corp.title">🏢 Corporate Accountability Tracker</h2>
+          <p data-i18n="corp.sub">Sustainability grades, climate pledges and notable greenwashing for major global corporations.</p>
+        </div>
+        <div class="corp-controls">
+          <input type="text" id="corp-search" data-i18n-placeholder="corp.search" placeholder="🔍 Search company or sector…" />
+          <div class="corp-filter-tags">
+            <button class="corp-filter active" data-filter="all" data-i18n="corp.f.all">All</button>
+            <button class="corp-filter" data-filter="A">A</button>
+            <button class="corp-filter" data-filter="B">B</button>
+            <button class="corp-filter" data-filter="C">C</button>
+            <button class="corp-filter" data-filter="D-F">D / F</button>
+          </div>
+        </div>
+        <div class="corp-legend">
+          <span><span class="grade-badge grade-a">A</span> <span data-i18n="corp.lg.A">Industry leader</span></span>
+          <span><span class="grade-badge grade-b">B</span> <span data-i18n="corp.lg.B">Strong action</span></span>
+          <span><span class="grade-badge grade-c">C</span> <span data-i18n="corp.lg.C">Mixed progress</span></span>
+          <span><span class="grade-badge grade-d">D</span> <span data-i18n="corp.lg.D">Concerning</span></span>
+          <span><span class="grade-badge grade-f">F</span> <span data-i18n="corp.lg.F">Climate laggard</span></span>
+        </div>
+        <div class="corp-grid" id="corp-grid"></div>
+        <div class="live-sources">
+          <strong data-i18n="corp.sources">Grades reflect public reports from:</strong>
+          <a href="https://www.cdp.net/" target="_blank" rel="noopener">CDP</a> ·
+          <a href="https://climateaction100.org/" target="_blank" rel="noopener">Climate Action 100+</a> ·
+          <a href="https://newclimate.org/" target="_blank" rel="noopener">NewClimate Institute</a> ·
+          <a href="https://www.influencemap.org/" target="_blank" rel="noopener">InfluenceMap</a>
+        </div>
+      </div>
+
+      <!-- WORLD: JOIN ASSOCIATIONS -->
+      <div class="tab-panel" id="panel-join">
+        <div class="panel-header">
+          <h2 data-i18n="join.title">🤝 Join an Association</h2>
+          <p data-i18n="join.sub">Find an environmental organisation that matches your cause — from global NGOs to youth-led grassroots groups.</p>
+        </div>
+        <div class="join-controls">
+          <input type="text" id="join-search" data-i18n-placeholder="join.search" placeholder="🔍 Search a name, country or cause…" />
+          <div class="join-filter-tags">
+            <button class="join-filter active" data-filter="all"           data-i18n="join.f.all">All</button>
+            <button class="join-filter" data-filter="international"        data-i18n="join.scope.international">International</button>
+            <button class="join-filter" data-filter="national"             data-i18n="join.scope.national">National</button>
+            <button class="join-filter" data-filter="youth"                data-i18n="join.scope.youth">Youth &amp; Grassroots</button>
+          </div>
+        </div>
+        <div class="join-grid" id="join-grid"></div>
+        <div class="live-sources">
+          <strong data-i18n="join.disclaimer">Note:</strong>
+          <span data-i18n="join.disclaimerBody">Links go to each organisation's official site. EcoTrack is not affiliated with any of them — choose the one that aligns with your values and local context.</span>
+        </div>
+      </div>
+
+      <!-- WORLD: LAWS & POLICIES -->
+      <div class="tab-panel" id="panel-policy">
+        <div class="panel-header">
+          <h2 data-i18n="policy.title">⚖️ Sustainability Laws &amp; Policies</h2>
+          <p data-i18n="policy.sub">Major laws, treaties and policies that shape sustainability around the world.</p>
+        </div>
+        <div class="policy-controls">
+          <input type="text" id="policy-search" data-i18n-placeholder="policy.search" placeholder="🔍 Search a law, treaty or country…" />
+          <div class="policy-filter-tags">
+            <button class="policy-filter active" data-filter="all"    data-i18n="policy.f.all">All</button>
+            <button class="policy-filter" data-filter="global"        data-i18n="policy.region.global">Global</button>
+            <button class="policy-filter" data-filter="eu"            data-i18n="policy.region.eu">Europe</button>
+            <button class="policy-filter" data-filter="na"            data-i18n="policy.region.na">North America</button>
+            <button class="policy-filter" data-filter="asia"          data-i18n="policy.region.asia">Asia</button>
+            <button class="policy-filter" data-filter="africa"        data-i18n="policy.region.africa">Africa</button>
+            <button class="policy-filter" data-filter="la"            data-i18n="policy.region.la">Latin America</button>
+            <button class="policy-filter" data-filter="oc"            data-i18n="policy.region.oc">Oceania</button>
+          </div>
+        </div>
+        <div class="policy-grid" id="policy-grid"></div>
+        <div class="live-sources">
+          <strong data-i18n="policy.sources">Sources:</strong>
+          <a href="https://unfccc.int/" target="_blank" rel="noopener">UNFCCC</a> ·
+          <a href="https://climate-laws.org/" target="_blank" rel="noopener">Climate Change Laws of the World</a> ·
+          <a href="https://www.iea.org/policies" target="_blank" rel="noopener">IEA Policies Database</a> ·
+          <a href="https://www.un.org/sustainabledevelopment/" target="_blank" rel="noopener">UN SDGs</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-inner">
+      <h2 data-i18n="about.title">Why It Matters</h2>
+      <div class="stats-row">
+        <div class="impact-stat">
+          <span class="big-num">1.5°C</span>
+          <p data-i18n="about.s1">The critical warming threshold we must stay below to avoid the worst climate impacts.</p>
+        </div>
+        <div class="impact-stat">
+          <span class="big-num">8B+</span>
+          <p data-i18n="about.s2">People on Earth — every small action multiplied at scale creates massive change.</p>
+        </div>
+        <div class="impact-stat">
+          <span class="big-num">30%</span>
+          <p data-i18n="about.s3">Of emissions could be reduced if everyone adopted a plant-rich diet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <footer id="footer" class="footer">
+    <div class="footer-cta">
+      <h2 data-i18n="footer.title">Ready to Live More Sustainably?</h2>
+      <p data-i18n="footer.sub">Small changes add up. Start with one habit this week — your planet will thank you.</p>
+      <div class="cta-actions">
+        <button class="btn-white" data-i18n="footer.try" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">Try the Tools</button>
+        <button class="btn-outline-white" id="share-ecotrack-btn" data-i18n="footer.share">Share EcoTrack</button>
+      </div>
+      <div class="share-box hidden" id="share-box">
+        <p class="share-box-title" data-i18n="footer.shareTitle">🔗 Share this link with a friend</p>
+        <div class="share-link-row">
+          <input type="text" id="share-link" readonly aria-label="Shareable link" />
+          <button class="btn-white" id="copy-link-btn" data-i18n="footer.copy">Copy</button>
+        </div>
+        <span class="share-status" id="share-status"></span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.tag">🌿 EcoTrack — Built for a better tomorrow</span>
+      <span>© 2026 EcoTrack</span>
+    </div>
+  </footer>
+
+  <!-- SDG MODAL -->
+  <div class="sdg-modal hidden" id="sdg-modal" role="dialog" aria-modal="true" aria-labelledby="sdg-modal-name">
+    <div class="sdg-modal-backdrop" data-sdg-close="1"></div>
+    <div class="sdg-modal-content">
+      <button class="sdg-modal-close" id="sdg-modal-close" aria-label="Close">×</button>
+      <div class="sdg-modal-head" id="sdg-modal-head">
+        <span class="sdg-modal-num" id="sdg-modal-num">1</span>
+        <span class="sdg-modal-icon" id="sdg-modal-icon">🚫</span>
+        <h3 class="sdg-modal-name" id="sdg-modal-name">SDG</h3>
+      </div>
+      <p class="sdg-modal-detail" id="sdg-modal-detail"></p>
+      <div class="sdg-modal-policy">
+        <div class="sdg-modal-policy-label" id="sdg-modal-policy-label">Example policy</div>
+        <div class="policy-card" id="sdg-modal-policy-card"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
